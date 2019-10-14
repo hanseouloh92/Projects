@@ -150,9 +150,6 @@ server <- function(input, output) {
   contract <- reactive({input$Contract})
   contract1 <- reactive({input$Contract1})
   
-  imp.names <- c("afaminu","bamador","cfullove","ddjesus","jaguilar1","jmartino","jalvarez","jponce","khill1","latwilliams","lkrasniqi",
-                 "lyadaicela","ljohnson1","mlutz","mmostowfi","mmahmud","psmith","smurphy2","sporter","ssciples","sblakemore1","tstokes")
-  
   output$barplot <- renderPlot({ # bar plot of pass fails based on terminal and "contract"
     terminalName = paste("Terminal", as.character(terminal()))
     if(contract() == 'Restroom' | contract() == 'Gate Lounge'){
