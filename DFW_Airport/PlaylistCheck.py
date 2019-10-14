@@ -6,7 +6,7 @@ from datetime import datetime
 #start = time.time() ### used to track script run time
 
 ####################################################################################### XML config section? 
-os.chdir(r'S:\mhan\duplicateCheck') # should be pointed to \\AODBPRDA\PFMHistory or wherever you need
+os.chdir(r'S:\mhan\duplicateCheck')
 
 reportDate = datetime.now().strftime("%m-%d-%Y") ## currently set to be current date
 
